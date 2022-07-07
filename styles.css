@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+	}
+	
+.top-nav {
+	display: flex;
+	width: 900px;
+	justify-content: space-between;
+}
+.top-nav-right {
+	width: 75%;
+	display: flex;
+	wrap: wrap;
+}
