@@ -2,18 +2,92 @@
 	box-sizing: border-box;
 }
 
+body {
+	display: flex;
+	justify-content: center;
+}
+
+div .main-align {
+	display: flex;
+	width: 900px;
+}
+
 .nav-container {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+	width: 900px;
 	}
 	
 .top-nav {
 	display: flex;
 	width: 900px;
+	height: 40px;
 	justify-content: space-between;
+	text-decoration: none;
+	background-color: #f8f8f8;
 }
+
 .top-nav-right {
 	width: 75%;
 	display: flex;
-	wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	padding: 5px;
+	text-decoration: none;
 }
+
+.nav-account a {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+
+.nav-phone a {
+	text-decoration: none;
+	color: black;
+}
+
+.bottom-nav {
+	display: flex;
+	width: 900px;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.nav-links {
+	display: flex;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.main-section {
+	display: flex;
+	justify-content: center;
+	height: 500px;
+	align-items: center;
+	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/slide1_image.jpg?v=92401627442472956191484148034");
+	flex-wrap: wrap;
+}
+
+.main-heading {
+	text-align: center;
+	width: 100%;
+	color: #ffffff;
+}
+
+.main-box {
+	display: flex;
+}
+
+
+
+.nav-dropdown {
+	display: none;
+}
+
