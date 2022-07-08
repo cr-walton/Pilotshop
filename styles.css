@@ -118,6 +118,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
+	width: 90%;
 }
 
 .article-top {
@@ -129,6 +130,7 @@ body {
 .article-bottom {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 }
 
 article {
@@ -136,10 +138,14 @@ article {
 	justify-content: center;
 	flex-direction: column;
 	height: 300px;
-	width: 250px;
+	width: 25%;
 	margin: 10px;
+	max-width: 300px;
 }
 
+h2 {
+	margin-top: 30px;
+}
 
 @media screen and (max-width: 768px){
 	.nav-dropdown {
@@ -168,5 +174,74 @@ article {
 	.bottom-nav {
 		flex-direction: column;
 		align-items: center;
+	}
+	
+	.top-nav {
+		height: 100px;
+	}
+	
+	.top-nav-right {
+		width: 100%;
+		justify-content: space-between;
+	}
+	
+	.top-nav-right div:nth-child(1) {
+		order: 3;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.top-nav-right div:nth-child(2) {
+		order: 1;
+	}
+	
+	.top-nav-right div:nth-child(3) {
+		
+		order: 2;
+	}
+	
+	.heading-box {
+		margin-top: 150px;
+	}
+	
+	#box-3 {
+		display: none;
+	}
+	
+	.tablet-hidden {
+		display: none;
+	}
+	
+	article {
+		width: 30%;
+
+	}
+	
+	
+}
+
+@media screen and (max-width: 480px) {
+	#box-2 {
+		display: none;
+	}
+	
+	.heading-box {
+		width: 65%;
+	}
+	
+	.tablet-hidden {
+		display: inline;
+	}
+	
+	.article-top {
+		flex-wrap: wrap;
+	}
+	
+	.article-bottom {
+		flex-wrap: wrap;
+	}
+	
+	article {
+		width: 80%;
 	}
 }
