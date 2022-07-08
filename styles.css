@@ -5,9 +5,10 @@
 body {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 }
 
-div .main-align {
+.main-align {
 	display: flex;
 	width: 900px;
 }
@@ -15,15 +16,13 @@ div .main-align {
 .nav-container {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
-	width: 900px;
+	flex-direction: column;
 	}
 	
 .top-nav {
 	display: flex;
-	width: 900px;
 	height: 40px;
-	justify-content: space-between;
+	justify-content: center;
 	text-decoration: none;
 	background-color: #f8f8f8;
 }
@@ -50,8 +49,7 @@ div .main-align {
 
 .bottom-nav {
 	display: flex;
-	width: 900px;
-	justify-content: space-between;
+	justify-content: center;
 	margin-top: 10px;
 }
 
@@ -70,21 +68,38 @@ div .main-align {
 	display: flex;
 	justify-content: center;
 	height: 500px;
-	align-items: center;
+	flex-direction: column;
 	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/slide1_image.jpg?v=92401627442472956191484148034");
+	background-repeat: no-repeat;
+	background-position: center top;
 	flex-wrap: wrap;
 }
 
 .main-heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	width: 100%;
 	color: #ffffff;
+	height: 300px;
+	flex-wrap: wrap;
 }
 
 .main-box {
 	display: flex;
+	justify-content: center;
+
+	
 }
 
+.heading-box {
+	height: 200px;
+	width: 200px;
+	background-color: #5ba0d0;
+	margin-right: 30px;
+	position: relative;
+}
 
 
 .nav-dropdown {
